@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="bower_components/angular-chart.js/dist/angular-chart.css">
+</head>
+    <body ng-app="app">
+        <div class="container" ng-controller="hello">
+            <canvas id="bar" class="chart chart-bar"
+            chart-data="greeting.data"
+            chart-labels="greeting.labels"
+            chart-series="greeting.series"
+            chart-colours="greeting.colors">
+            </canvas>
+
+        </div>
+        <script src="bower_components/Chart.js/Chart.js"></script>
+        <script src="bower_components/angular/angular.js"></script>
+        <script src="bower_components/angular-chart.js/dist/angular-chart.js"></script>
+        <script src="controller.js"></script>
+    </body>
+</html>
