@@ -7,13 +7,17 @@
 </head>
     <body ng-app="app">
         <div class="container" ng-controller="hello">
-            <canvas id="bar" class="chart chart-bar"
-            chart-data="greeting.data"
-            chart-labels="greeting.labels"
-            chart-series="greeting.series"
-            chart-colours="greeting.colors">
+            <canvas id="bar-disktop" class="chart chart-bar"
+            chart-data="disktop.data"
+            chart-labels="disktop.labels"
+            chart-series="disktop.series">
             </canvas>
 
+            <canvas id="bar-iops" class="chart chart-bar"
+            chart-data="iops.data"
+            chart-labels="iops.labels"
+            chart-series="iops.series">
+            </canvas>
         </div>
         <script src="bower_components/Chart.js/Chart.js"></script>
         <script src="bower_components/angular/angular.js"></script>
